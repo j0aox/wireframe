@@ -144,3 +144,10 @@ body {
     height: 250px;
     margin: 32px;
 }
+
+.recent-customres {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #4b4276;
+}
