@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://Kit.fontawesome.com/b99e675b6e.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>Document</title>
 </head>
+
 <body>
 
     <div class="wrapper">
@@ -44,36 +47,166 @@
             <div class="content">
                 <div class="container-sales">
                     <h1>TOTAL SALES</h1>
-                    <p>21 324</p>
                     <a href="#"><i class="fas fa-store"></i></a>
+                    <p>21 324</p>
                 </div>
                 <div class="container-income">
                     <h1>TOTAL INCOME</h1>
-                    <p>211 324</p>
                     <a href="#"><i class="fas fa-tags"></i></a>
+                    <p>211 324</p>
                 </div>
                 <div class="container-views">
                     <h1>TOTAL VIEWS</h1>
-                    <p>65 2234</p>
                     <a href="#"><i class="fas fa-desktop"></i></a>
+                    <p>65 2234</p>
                 </div>
-            </div>
 
-            <div class="content-two">
                 <div class="sales-performace">
-                    <h1>SALES PERFORMACE</h1>
+                    <span>
+                        <h1>SALES PERFORMACE</h1>
+                        <a href="#"><i class="fas fa-cog"></i></a>
+
+                    </span>
+
+                    <canvas id="myChart"></canvas>
+
+
+                    <script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
+                        var chart = new Chart(ctx, {
+                            // The type of chart we want to create
+                            type: 'line',
+
+                            // The data for our dataset
+                            data: {
+                                labels: ['January', 'February', 'May', 'June'],
+                                datasets: [{
+                                    label: 'Laptop',
+                                    backgroundColor: '#444',
+                                    borderColor: '#777)',
+                                    data: [0 ,30 , 2 , 10 ,0],
+                                    fill: "origin"
+                                },{
+                                    label: 'Headsets',
+                                    backgroundColor: '#777',
+                                    borderColor: '#777)',
+                                    data: [0, 10, 5, 2, 20, 30, 45],
+                                    fill: "origin"
+                                },
+                                {
+                                    label: 'Laptops',
+                                    backgroundColor: '#777',
+                                    borderColor: '#777)',
+                                    data: [0, 10, 5, 2, 20, 30, 45],
+                                    fill: "origin"
+                                },
+                                {
+                                    label: 'Phones',
+                                    backgroundColor: '#777',
+                                    borderColor: '#777)',
+                                    data: [0, 10, 5, 2, 20, 30, 45],
+                                    fill: "origin"
+                                }],
+
+                            },
+
+                            // Configuration options go here
+                            options: {
+
+                                legend:{
+                                    display: true,
+                                    position: "top",
+                                    align: "top"
+                                },
+
+                                layout: {
+                                    padding: {
+                                        left: 10,
+                                        right: 30,
+                                        top: 10,
+                                        bottom: 20
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+
+
+
+
                 </div>
                 <div class="top-categories">
                     <h1>TOP CATEGORIES</h1>
+
+                    
                 </div>
+
+
+                <div class="recent-customres">
+
+                    <span class="recent_constumers_header">
+
+                        <h1>RECENT CUSTOMERS</h1>
+                        <a href="#"><i class="fas fa-cog"></i></a>
+                    </span>
+
+                    <ul class="recent-customres_content_list">
+                        <li>
+                            <span>Jerry Mattedi</span>
+                            <span>
+                                <p>13 aug 2018</p>
+                                <p>joined</p>
+                            </span>
+                            <span>
+                                <p>(11) 00000-0000</p>
+                                <p>Phone Number</p>
+                            </span>
+                            <span>
+                                <p>New York</p>
+                                <p>Location</p>
+                            </span>
+
+                            <span>
+                                <button>Options</button>
+                                <button>Details</button>
+                            </span>
+                        </li>
+                        <li>
+                            <span>Jerry Mattedi</span>
+                            <span>
+                                <p>13 aug 2018</p>
+                                <p>joined</p>
+                            </span>
+                            <span>
+                                <p>(11) 00000-0000</p>
+                                <p>Phone Number</p>
+                            </span>
+                            <span>
+                                <p>New York</p>
+                                <p>Location</p>
+                            </span>
+
+                            <span>
+                                <button>Options</button>
+                                <button>Details</button>
+                            </span>
+                        </li>
+
+                </div>
+
             </div>
 
-            <div class="recent-customres">
-                <h1>RECENT CUSTOMERS</h1>
-                <a href="#"><i class="fas fa-cog"></i></a>
-            </div>
         </div>
+
     </div>
-    
+    </div>
+
+    <footer>
+        <span>Your company details</span>
+    </footer>
+
+
+
 </body>
+
 </html>
