@@ -103,25 +103,27 @@ body {
 .content {
     color: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     column-gap: 5px;
+}
+
+.content div{
+
+    background: #bdb8d7;
 }
 
 .container-sales {
     
-    background: #bdb8d7;
     height: 85px;
     margin: 32px;
 }
 
 .container-income {
-    background: #bdb8d7;
     height: 85px;
     margin: 32px;
 }
 
 .container-views {
-    background: #bdb8d7;
     height: 85px;
     margin: 32px;
 }
@@ -130,7 +132,6 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-left: 10px;
 }
 
 .sales-performace {
