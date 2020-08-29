@@ -77,25 +77,25 @@
 
                                 // The data for our dataset
                                 data: {
-                                    labels: ['January', 'February', 'May', 'June','July'],
+                                    labels: ['January', 'February', 'May', 'June', 'July'],
                                     datasets: [{
                                         label: 'Laptop',
                                         backgroundColor: '#777',
                                         borderColor: '#777',
-                                        data: [0,15,5,10,0],
+                                        data: [0, 15, 5, 10, 0],
                                         fill: "origin"
-                                    },{
+                                    }, {
                                         label: 'Headsets',
                                         backgroundColor: '#aaa',
                                         borderColor: '#aaa',
-                                        data: [5,20,10,15,5],
+                                        data: [5, 20, 10, 15, 5],
                                         fill: "origin"
                                     },
                                     {
                                         label: 'Laptops',
                                         backgroundColor: '#bbb',
                                         borderColor: '#bbb',
-                                        data: [10,25,15,20,10],
+                                        data: [10, 25, 15, 20, 10],
                                         fill: "origin"
                                     },
                                     {
@@ -108,10 +108,9 @@
 
                                 },
 
-                                // Configuration options go here
                                 options: {
 
-                                    legend:{
+                                    legend: {
                                         display: true,
                                         position: "top",
                                         align: "top"
@@ -124,7 +123,14 @@
                                             top: 10,
                                             bottom: 20
                                         }
+                                    },
+
+                                    elements: {
+                                        line: {
+                                            tension: 0
+                                        }
                                     }
+
                                 }
                             });
                         </script>
