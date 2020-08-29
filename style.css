@@ -10,7 +10,6 @@
     outline: none;
 }
 
-
 button{
     cursor: pointer;
 }
@@ -118,7 +117,6 @@ body {
 }
 
 .content > div:not(.recent-customres){
-
     border: 1px solid #ccc;
 }
 
@@ -127,7 +125,6 @@ body {
 }
 
 .content div:not(.recent-customres) h1{
-
     font-size: 17px;
     margin: 1rem 0 .5rem 1rem;
     color: #888;
@@ -136,7 +133,6 @@ body {
 .container-sales,
 .container-income,
 .container-views {
-
     margin: 32px 32px 0 32px;
     display: grid;
     grid-template-columns: 6fr 1fr;
@@ -147,16 +143,12 @@ body {
 }   
 
 .container-sales {
-    
     height: 85px;
 }
-
-
 
 .container-sales a,
 .container-income a,
 .container-views a{
-    
     grid-column: 2;
     grid-row: 1/4;
 }
@@ -164,7 +156,6 @@ body {
 .container-sales p,
 .container-income p,
 .container-views p{
-    
     grid-column: 1;
     grid-row: 2;
     color: #B1B1B1;
@@ -191,7 +182,6 @@ body {
 }
 
 .sales-performace span{
-    
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -229,7 +219,6 @@ body {
 }
 
 .recent-customres .recent_constumers_header {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,7 +226,6 @@ body {
 }
 
 .recent-customres .recent_constumers_header h1{
-    
     font-size: 17px;
     color: #888;
 }
@@ -263,28 +251,21 @@ body {
 }
 
 .recent-customres .recent-customres_content_list li:nth-child(2n){
-    
     background: rgb(248, 248, 248);
 }
 
-
 .recent-customres_content_list li span:nth-child(n + 2):nth-child(-n+4){
-    
     font-size: .9rem;
     color: #aaa;
-
 }
 
 .recent-customres_content_list li span:nth-child(n + 2):nth-child(-n+4) p:first-child{
-    
     font-size: 1rem;
     color: #aaa;
     margin: 2px 0;
-
 }
 
 .recent-customres_content_list li span:nth-child(n + 5) button{
-    
     font-size: .8rem;
     color: #aaa;
     border: none;
@@ -295,29 +276,24 @@ body {
 }
 
 .recent-customres_content_list li span:nth-child(n + 5) button:first-child{
-    
     background: #ddd;
     font-size: .8rem;
     color: #777;
     border: none;
     padding: 6px 10px;
-
 }
 
 .recent-customres_content_list li span:nth-child(n + 5) button:last-child{
-    
     background: #333;
     font-size: .8rem;
     color: #999;
     border: none;
     padding: 6px 10px;
-
 }
 
 .recent-customres .recent-customres_content_list li span:nth-of-type(1){
-
-        color:#555;
-        font-size: 1.3rem;
+    color:#555;
+    font-size: 1.3rem;
 }
 
 footer{
@@ -332,8 +308,12 @@ footer{
 }
 
 footer span{
-
     color: #aaa;
-    margin-left: 45px;
+    margin-left: 5px;
     font-size: 13px;
+}
+
+footer a {
+    color: #aaa;
+    margin-left: 35px;
 }
