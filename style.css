@@ -112,7 +112,7 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 85px 320px minmax(180px,1fr);
+    grid-template-rows: 85px minmax(320px,1fr) minmax(180px,1fr);
     row-gap: 80px;
 }
 
@@ -257,6 +257,8 @@ body {
 .recent-customres_content_list li span:nth-child(n + 2):nth-child(-n+4){
     font-size: .9rem;
     color: #aaa;
+    max-width: 110px;
+    width: 100%;
 }
 
 .recent-customres_content_list li span:nth-child(n + 2):nth-child(-n+4) p:first-child{
@@ -294,6 +296,8 @@ body {
 .recent-customres .recent-customres_content_list li span:nth-of-type(1){
     color:#555;
     font-size: 1.3rem;
+    max-width: 165px;
+    width: 100%;
 }
 
 footer{
