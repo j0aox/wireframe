@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://Kit.fontawesome.com/b99e675b6e.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>Document</title>
 </head>
@@ -15,7 +15,7 @@
     <div class="wrapper">
         <div class="sidebar">
             <header>
-                <li><a href="#"><i class="fas fa-align-justify"></i></a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
             </header>
             <ul>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
@@ -68,72 +68,6 @@
                     </span>
 
                     <canvas id="myChart">
-
-                        <script>
-                            var ctx = document.getElementById('myChart').getContext('2d');
-                            var chart = new Chart(ctx, {
-                                // The type of chart we want to create
-                                type: 'line',
-
-                                // The data for our dataset
-                                data: {
-                                    labels: ['January', 'February', 'May', 'June', 'July'],
-                                    datasets: [{
-                                        label: 'Laptop',
-                                        backgroundColor: '#777',
-                                        borderColor: '#777',
-                                        data: [0, 15, 5, 10, 0],
-                                        fill: "origin"
-                                    }, {
-                                        label: 'Headsets',
-                                        backgroundColor: '#aaa',
-                                        borderColor: '#aaa',
-                                        data: [5, 20, 10, 15, 5],
-                                        fill: "origin"
-                                    },
-                                    {
-                                        label: 'Laptops',
-                                        backgroundColor: '#bbb',
-                                        borderColor: '#bbb',
-                                        data: [10, 25, 15, 20, 10],
-                                        fill: "origin"
-                                    },
-                                    {
-                                        label: 'Phones',
-                                        backgroundColor: '#ccc',
-                                        borderColor: '#ccc',
-                                        data: [15, 30, 20, 25, 15],
-                                        fill: "origin"
-                                    }],
-
-                                },
-
-                                options: {
-
-                                    legend: {
-                                        display: true,
-                                        position: "top",
-                                        align: "top"
-                                    },
-
-                                    layout: {
-                                        padding: {
-                                            left: 10,
-                                            right: 30,
-                                            top: 10,
-                                            bottom: 20
-                                        }
-                                    },
-
-                                    elements: {
-                                        line: {
-                                            tension: 0
-                                        }
-                                    }
-
-                                }
-                            });
-                        </script>
 
                     </canvas>
 
@@ -264,6 +198,7 @@
         <span>Your company details</span>
     </footer>
 
+    <script src="public/script.js"></script>
 </body>
 
 </html>
