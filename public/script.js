@@ -46,8 +46,8 @@ var chart = new Chart(ctx, {
 
         layout: {
             padding: {
-                left: 1,
-                right: 15,
+                left: 15,
+                right: 30,
                 top: 15,
                 bottom: 1
             }
@@ -59,5 +59,37 @@ var chart = new Chart(ctx, {
             }
         }
 
+    }
+});
+
+
+var ctx2 = document.getElementById('myChartPie').getContext('2d');
+                     
+var myDoughnutChart = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+        labels:["Eletronics","Furniture","Toys"],
+        datasets: [{
+            label: "Dataset",
+            data: [9,6,4],
+            backgroundColor:["#888","#777","#aaa"],
+            borderWidth: 5,
+            weight: 10
+        }]
+    },
+    options: {
+
+        responsive: true,
+        cutoutPercentage : 30,
+
+        legend: {
+
+            displa: true,
+
+            labels: {
+                defaultFontSize: 2,
+                fontcolor: "red"
+            }
+        }
     }
 });

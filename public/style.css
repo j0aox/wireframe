@@ -113,8 +113,8 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 85px minmax(320px, auto) minmax(180px,1fr);
-    row-gap: 80px;
+    grid-template-rows: auto auto minmax(180px,1fr);
+    row-gap: 40px;
 }
 
 .content > div:not(.recent-customres){
@@ -214,6 +214,7 @@ body {
 
 .top-categories {
     margin: 0 32px;
+    overflow: hidden;
 }
 
 .recent-customres {
@@ -222,7 +223,7 @@ body {
     color: #4b4276;
     margin: 0 32px 32px 32px;
     grid-column: 1 / 4;
-    grid-row: 3/ 6;
+    grid-row: 3/ 5;
 }
 
 .recent-customres .recent_constumers_header {
