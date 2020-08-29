@@ -65,85 +65,79 @@
                     <span>
                         <h1>SALES PERFORMACE</h1>
                         <a href="#"><i class="fas fa-cog"></i></a>
-
                     </span>
 
-                    <canvas id="myChart"></canvas>
+                    <canvas id="myChart">
 
+                        <script>
+                            var ctx = document.getElementById('myChart').getContext('2d');
+                            var chart = new Chart(ctx, {
+                                // The type of chart we want to create
+                                type: 'line',
 
-                    <script>
-                        var ctx = document.getElementById('myChart').getContext('2d');
-                        var chart = new Chart(ctx, {
-                            // The type of chart we want to create
-                            type: 'line',
+                                // The data for our dataset
+                                data: {
+                                    labels: ['January', 'February', 'May', 'June'],
+                                    datasets: [{
+                                        label: 'Laptop',
+                                        backgroundColor: '#444',
+                                        borderColor: '#777)',
+                                        data: [0 ,30 , 2 , 10 ,0],
+                                        fill: "origin"
+                                    },{
+                                        label: 'Headsets',
+                                        backgroundColor: '#777',
+                                        borderColor: '#777)',
+                                        data: [0, 10, 5, 2, 20, 30, 45],
+                                        fill: "origin"
+                                    },
+                                    {
+                                        label: 'Laptops',
+                                        backgroundColor: '#777',
+                                        borderColor: '#777)',
+                                        data: [0, 10, 5, 2, 20, 30, 45],
+                                        fill: "origin"
+                                    },
+                                    {
+                                        label: 'Phones',
+                                        backgroundColor: '#777',
+                                        borderColor: '#777)',
+                                        data: [0, 10, 5, 2, 20, 30, 45],
+                                        fill: "origin"
+                                    }],
 
-                            // The data for our dataset
-                            data: {
-                                labels: ['January', 'February', 'May', 'June'],
-                                datasets: [{
-                                    label: 'Laptop',
-                                    backgroundColor: '#444',
-                                    borderColor: '#777)',
-                                    data: [0 ,30 , 2 , 10 ,0],
-                                    fill: "origin"
-                                },{
-                                    label: 'Headsets',
-                                    backgroundColor: '#777',
-                                    borderColor: '#777)',
-                                    data: [0, 10, 5, 2, 20, 30, 45],
-                                    fill: "origin"
-                                },
-                                {
-                                    label: 'Laptops',
-                                    backgroundColor: '#777',
-                                    borderColor: '#777)',
-                                    data: [0, 10, 5, 2, 20, 30, 45],
-                                    fill: "origin"
-                                },
-                                {
-                                    label: 'Phones',
-                                    backgroundColor: '#777',
-                                    borderColor: '#777)',
-                                    data: [0, 10, 5, 2, 20, 30, 45],
-                                    fill: "origin"
-                                }],
-
-                            },
-
-                            // Configuration options go here
-                            options: {
-
-                                legend:{
-                                    display: true,
-                                    position: "top",
-                                    align: "top"
                                 },
 
-                                layout: {
-                                    padding: {
-                                        left: 10,
-                                        right: 30,
-                                        top: 10,
-                                        bottom: 20
+                                // Configuration options go here
+                                options: {
+
+                                    legend:{
+                                        display: true,
+                                        position: "top",
+                                        align: "top"
+                                    },
+
+                                    layout: {
+                                        padding: {
+                                            left: 10,
+                                            right: 30,
+                                            top: 10,
+                                            bottom: 20
+                                        }
                                     }
                                 }
-                            }
-                        });
-                    </script>
+                            });
+                        </script>
 
-
-
+                    </canvas>
 
                 </div>
+
                 <div class="top-categories">
                     <h1>TOP CATEGORIES</h1>
-
-                    
                 </div>
 
-
                 <div class="recent-customres">
-
                     <span class="recent_constumers_header">
 
                         <h1>RECENT CUSTOMERS</h1>
@@ -158,7 +152,7 @@
                                 <p>joined</p>
                             </span>
                             <span>
-                                <p>(11) 00000-0000</p>
+                                <p>251-661-5362</p>
                                 <p>Phone Number</p>
                             </span>
                             <span>
@@ -172,17 +166,17 @@
                             </span>
                         </li>
                         <li>
-                            <span>Jerry Mattedi</span>
+                            <span>Elianora Vasilov</span>
                             <span>
                                 <p>13 aug 2018</p>
                                 <p>joined</p>
                             </span>
                             <span>
-                                <p>(11) 00000-0000</p>
+                                <p>351-661-3252</p>
                                 <p>Phone Number</p>
                             </span>
                             <span>
-                                <p>New York</p>
+                                <p>Ontario</p>
                                 <p>Location</p>
                             </span>
 
@@ -191,7 +185,66 @@
                                 <button>Details</button>
                             </span>
                         </li>
+                        <li>
+                            <span>Marcos Anguiano</span>
+                            <span>
+                                <p>13 aug 2018</p>
+                                <p>joined</p>
+                            </span>
+                            <span>
+                                <p>251-661-5362</p>
+                                <p>Phone Number</p>
+                            </span>
+                            <span>
+                                <p>Milan</p>
+                                <p>Location</p>
+                            </span>
 
+                            <span>
+                                <button>Options</button>
+                                <button>Details</button>
+                            </span>
+                        </li>
+                        <li>
+                            <span>Alvis Daen</span>
+                            <span>
+                                <p>13 aug 2018</p>
+                                <p>joined</p>
+                            </span>
+                            <span>
+                                <p>351-661-3252</p>
+                                <p>Phone Number</p>
+                            </span>
+                            <span>
+                                <p>Las Vegas</p>
+                                <p>Location</p>
+                            </span>
+
+                            <span>
+                                <button>Options</button>
+                                <button>Details</button>
+                            </span>
+                        </li>
+                        <li>
+                            <span>Lissa Shipsey</span>
+                            <span>
+                                <p>13 aug 2018</p>
+                                <p>joined</p>
+                            </span>
+                            <span>
+                                <p>251-661-5362</p>
+                                <p>Phone Number</p>
+                            </span>
+                            <span>
+                                <p>San Francisco</p>
+                                <p>Location</p>
+                            </span>
+
+                            <span>
+                                <button>Options</button>
+                                <button>Details</button>
+                            </span>
+                        </li>
                 </div>
 
             </div>
@@ -199,13 +252,11 @@
         </div>
 
     </div>
-    </div>
 
     <footer>
+        <a href="#"><i class="fas fa-copyright"></i></a>
         <span>Your company details</span>
     </footer>
-
-
 
 </body>
 
