@@ -112,7 +112,7 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 85px minmax(320px,1fr) minmax(180px,1fr);
+    grid-template-rows: 85px auto minmax(180px,1fr);
     row-gap: 80px;
 }
 
@@ -215,7 +215,7 @@ body {
     color: #4b4276;
     margin: 0 32px 32px 32px;
     grid-column: 1 / 4;
-    grid-row: 3/ 6;
+    grid-row: 3/ 5;
 }
 
 .recent-customres .recent_constumers_header {

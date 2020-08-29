@@ -67,80 +67,104 @@
                         <a href="#"><i class="fas fa-cog"></i></a>
                     </span>
 
-                    <canvas id="myChart">
+                    <canvas id="myChart"></canvas>
 
-                        <script>
-                            var ctx = document.getElementById('myChart').getContext('2d');
-                            var chart = new Chart(ctx, {
-                                // The type of chart we want to create
-                                type: 'line',
+                    <script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
+                        var chart = new Chart(ctx, {
+                            // The type of chart we want to create
+                            type: 'line',
 
-                                // The data for our dataset
-                                data: {
-                                    labels: ['January', 'February', 'May', 'June', 'July'],
-                                    datasets: [{
-                                        label: 'Laptop',
-                                        backgroundColor: '#777',
-                                        borderColor: '#777',
-                                        data: [0, 15, 5, 10, 0],
-                                        fill: "origin"
-                                    }, {
-                                        label: 'Headsets',
-                                        backgroundColor: '#aaa',
-                                        borderColor: '#aaa',
-                                        data: [5, 20, 10, 15, 5],
-                                        fill: "origin"
-                                    },
-                                    {
-                                        label: 'Laptops',
-                                        backgroundColor: '#bbb',
-                                        borderColor: '#bbb',
-                                        data: [10, 25, 15, 20, 10],
-                                        fill: "origin"
-                                    },
-                                    {
-                                        label: 'Phones',
-                                        backgroundColor: '#ccc',
-                                        borderColor: '#ccc',
-                                        data: [15, 30, 20, 25, 15],
-                                        fill: "origin"
-                                    }],
+                            // The data for our dataset
+                            data: {
+                                labels: ['January', 'February', 'May', 'June', 'July'],
+                                datasets: [{
+                                    label: 'Laptop',
+                                    backgroundColor: '#777',
+                                    borderColor: '#777',
+                                    data: [0, 15, 5, 10, 0],
+                                    fill: "origin"
+                                }, {
+                                    label: 'Headsets',
+                                    backgroundColor: '#aaa',
+                                    borderColor: '#aaa',
+                                    data: [5, 20, 10, 15, 5],
+                                    fill: "origin"
+                                },
+                                {
+                                    label: 'Laptops',
+                                    backgroundColor: '#bbb',
+                                    borderColor: '#bbb',
+                                    data: [10, 25, 15, 20, 10],
+                                    fill: "origin"
+                                },
+                                {
+                                    label: 'Phones',
+                                    backgroundColor: '#ccc',
+                                    borderColor: '#ccc',
+                                    data: [15, 30, 20, 25, 15],
+                                    fill: "origin"
+                                }],
 
+                            },
+
+                            options: {
+
+                                legend: {
+                                    display: true,
+                                    position: "top",
+                                    align: "top"
                                 },
 
-                                options: {
-
-                                    legend: {
-                                        display: true,
-                                        position: "top",
-                                        align: "top"
-                                    },
-
-                                    layout: {
-                                        padding: {
-                                            left: 10,
-                                            right: 30,
-                                            top: 10,
-                                            bottom: 20
-                                        }
-                                    },
-
-                                    elements: {
-                                        line: {
-                                            tension: 0
-                                        }
+                                layout: {
+                                    padding: {
+                                        left: 10,
+                                        right: 30,
+                                        top: 10,
+                                        bottom: 10
                                     }
+                                },
 
+                                elements: {
+                                    line: {
+                                        tension: 0
+                                    }
                                 }
-                            });
-                        </script>
 
-                    </canvas>
+                            }
+                        });
+                    </script>
+
 
                 </div>
 
                 <div class="top-categories">
                     <h1>TOP CATEGORIES</h1>
+
+                    <div><canvas id="myChartPie"></canvas></div>
+
+                    <script>
+                         var ctx2 = document.getElementById('myChartPie').getContext('2d');
+                     
+                        var myDoughnutChart = new Chart(ctx2, {
+                            type: 'doughnut',
+                            data: {
+                                labels:["Eletronics","Furniture","Toys"],
+                                datasets: [{
+                                    label: "Dataset",
+                                    data: [9,6,4],
+                                    backgroundColor:["#888","#777","#aaa"],
+                                    borderWidth: 5,
+                                    weight: 10
+                                }]
+                            },
+                            options: {
+                                cutoutPercentage : 30
+                            }
+                        });
+
+                    </script>
+
                 </div>
 
                 <div class="recent-customres">
