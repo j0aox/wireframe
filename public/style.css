@@ -138,7 +138,7 @@ body {
     height: 1px;
     margin-top: 20px;
     margin-left: 0;
-    background: #777;
+    background: #e0e4e8;
     transform: translateX(-16px);
     display: block;
 }
@@ -336,7 +336,7 @@ footer{
     display: flex;
     z-index: 100;
     align-items: center;
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #e0e4e8;
 }
 
 footer span{
