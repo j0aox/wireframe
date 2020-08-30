@@ -71,7 +71,7 @@ var myDoughnutChart = new Chart(ctx2, {
         labels: ["Eletronics", "Furniture", "Toys"],
         datasets: [{
             label: "Dataset",
-            data: [9, 6, 4],
+            data: [10, 6, 4],
             backgroundColor: ["#888", "#777", "#aaa"],
             borderWidth: 5,
             fontSize: 10
